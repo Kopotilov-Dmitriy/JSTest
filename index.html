@@ -1,0 +1,83 @@
+﻿<!doctype html>
+<html>
+<head>
+ <title></title>
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<h2>Выберите маршрут</h2>
+ <select name="route" id="route">
+  <option value="1"> из A в Б </option>
+  <option value="2"> из Б в A </option>
+  <option value="3"> из А в Б и обратно в А </option>
+ </select>
+ 
+<br>
+
+ <h2>Выберите время</h2>
+ <select name="time" id="time_ab">
+  <option value="01">18:00(из A в Б)</option>
+  <option value="02">18:30(из A в Б)</option>
+  <option value="03">18:45(из A в Б)</option>
+  <option value="04">19:00(из A в Б)</option>
+  <option value="05">19:15(из A в Б)</option>
+  <option value="06">21:00(из A в Б)</option>
+  
+  </select>
+  
+  <select name="time" id="time_ba">
+  <option value="07">18:30(из Б в A)</option>
+  <option value="08">18:45(из Б в A)</option>
+  <option value="09">19:00(из Б в A)</option>
+  <option value="10">19:15(из Б в А)</option>
+  <option value="11">19:35(из Б в А)</option>
+  <option value="12">21:50(из Б в A)</option>
+  <option value="13">21:55(из Б в А)</option>
+  </select>
+ 
+<br>
+
+<h2 id="h2_stels">Выберите обратное время</h2>
+
+<select id="time_aba1">
+  <option value="01">19:00(из Б в A)</option>
+  <option value="02">19:15(из Б в А)</option>
+  <option value="03">19:35(из Б в А)</option>
+  <option value="04">21:50(из Б в A)</option>
+  <option value="05">21:55(из Б в А)</option>
+  </select>
+  
+<select id="time_aba2">
+  <option value="01">19:35(из Б в А)</option>
+  <option value="02">21:50(из Б в A)</option>
+  <option value="03">21:55(из Б в А)</option>
+  </select>
+  
+<select id="time_aba3">
+  <option value="01">21:50(из Б в A)</option>
+  <option value="02">21:55(из Б в А)</option>
+  </select>
+
+<br>
+
+<h2>Количество билетов</h2>
+<input id="num" placeholder="1">
+
+<br>
+
+<button onclick="clickButton()">Рассчитать стоимость</button>
+</main>
+
+<br>
+
+<p>• Количество билетов: <span id="num_ticket">1</span></p>
+<p>• По маршруту: <span id="num_marshrut"> </span></p>
+<p>• Стоимость: <span id="num_money"> </span></p>
+<p>• Путешествие займёт: <span id="num_time"> </span></p>
+<p>• Теплоход уходит: <span id="num_rasspisanie"> </span></p>
+<p id="p_stels">• Теплоход возвращается: <span id="num_rasspisanie2"> </span></p>
+ 
+ <script src="script.js"></script>
+</body>
+</html>

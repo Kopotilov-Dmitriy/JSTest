@@ -1,0 +1,52 @@
+﻿main {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ background-color: #9cbdff;
+ padding: 10px;
+ border: 2px solid silver;
+ border-radius: 20px;
+ max-width: 260px;
+}
+
+h2 {
+ font-size: 16px;
+ color: #444444;
+ margin-bottom: 10px;
+}
+
+select, input {
+ font-size: 16px;
+ color: #444444;
+ background-color: #fffcb3;
+ border: 1px solid black;
+ border-radius: 10px;
+ padding: 5px;
+ outline: none;
+ text-align: center;
+}
+
+input {
+ max-width: 40px;
+}
+
+button {
+ background-color: #a8e4a0;
+ font-size: 16px;
+ color: #444444;
+ border: 1px solid black;
+ border-radius: 10px;
+ padding: 10px;
+ margin-top: 10px;
+ margin-bottom: 10px;
+ outline: none;
+}
+
+span {
+ font-weight: 600;
+ color: #c90000;
+}
+
+#time_ab, #time_ba, #h2_stels, #time_aba1, #time_aba2, #time_aba3, #p_stels {
+ display: none;
+}
